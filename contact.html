@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Contacter l'artiste" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact &lowast; Le blog des développeurs web</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/blog_style.css" />
+    <link rel="stylesheet" href="css/mobile-blog_style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700%7COpen+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+
+    <!--[if lt IE 9]>
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js">
+</script>
+<![endif]-->
+</head>
+
+<body id="top">
+    <!-- Début entete-->
+    <header class="fond">
+        <div class="conteneur">
+            <div id="entete">
+                <div class="logo"><a href="index.html">Dev Blog</a></div>
+                <p>Apprendre à coder pour de vrai</p>
+            </div>
+
+        </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a class="actif" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <nav id="menu-mobile">
+            <i class="fas fa-bars"></i>
+            <ul>
+                <li><a class="actif" href="index.html">Accueil</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Fin entete-->
+    <!-- Début conteneur principal-->
+    <main class="principal conteneur flex">
+        <!-- Liste des articles-->
+        <article id="page" class="inter">
+            <h1>Contact</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti necessitatibus, sit similique maxime
+                labore iusto magnam voluptatibus iure.</p>
+            <h2>Envoyer un mail</h2>
+            <!-- Début formulaire-->
+            <div class="formulaire">
+                <form action="php/insertion_agent.php" method="post">
+                    <!--section 1-->
+                    <p>
+                        <!--Liste déroulante-->
+                        <label for="civilite">Objet :</label>
+                        <select id="civilite">
+                            <option value="info" selected="selected">Demande d'informations</option>
+                            <option value="devis">Demande de devis</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <!--Texte (une ligne simle)-->
+                        <label for="nom_agent">Votre nom :</label>
+                        <input type="text" name="nom_agent" id="nom_agent" placeholder="Nom" required="required" />
+                    </p>
+
+                    <p>
+                        <!--Email (obligatoire)-->
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email" placeholder="Email" required />
+                    </p>
+
+                    <p>
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" placeholder="Message"></textarea>
+                    </p>
+
+                    <!--Fin section 2-->
+
+                    <input type="submit" value="OK" />
+
+
+                </form>
+            </div>
+            <!--Fin formulaire-->
+
+        </article>
+        <!-- Fin liste des articles -->
+
+        <!-- Début colonne-->
+        <aside id="colonne">
+            <div class="widget">
+                <h3>Informations</h3>
+
+
+                <p>
+                    <strong><i class="fas fa-user"></i> Diallo Ibra</strong><br /> Webmaster & Formateur
+                </p>
+                <p><i class=" fas fa-mobile-alt"></i> 0651160907</p>
+                <p><i class="far fa-envelope"></i> <a href="mailto:mail@contact.fr">dev.technologie@gmail.fr</a></p>
+
+
+            </div>
+
+            <div class="widget">
+                <h3>Localisation</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2890.0864372912956!2d1.4003133154955167!3d43.58391587912362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebba8eead12fb%3A0xef020371ce180798!2sAP+Formation!5e0!3m2!1sfr!2sfr!4v1529660545483"
+                    width="500" height="260" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+
+        </aside>
+        <!-- Fin colonne-->
+    </main>
+    <!-- Fin conteneur principal-->
+
+    <!-- Début pied de page-->
+    <footer class="conteneur">
+        <div id="pied" class="flex">
+            <small>&copy; 2018 - Ibra D pour <a href="#">AP Formation</a></small>
+            <nav id="menu-pied">
+                <ul>
+                    <li><a href="#">Crédits</a></li>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">Plan</a></li>
+                </ul>
+            </nav>
+
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook-square fa-lg"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter-square fa-lg"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin fa-lg"></i></a></li>
+            </ul>
+
+        </div>
+    </footer>
+    <!-- Fin pied de page-->
+    <a title="haut de page" href="#top" class="top js-scrollTo">
+        <i class="fas fa-chevron-up fa-lg"></i>
+    </a>
+    <!-- DEBUT JAVASCRIPT-->
+    <!-- Bibliotheque jQuery -->
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+
+    <!-- Script perso -->
+    <script type="text/javascript" src="js/blog_scripts.js"></script>
+
+    <!-- Infobulles-->
+    <script type="text/javascript" src="js/tooltipster.bundle.min.js"></script>
+    <!-- FIN JAVASCRIPT-->
+
+</body>
+
+</html>

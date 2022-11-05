@@ -1,0 +1,103 @@
+@media screen and (max-width:1000px){
+    
+    .conteneur{
+        width: 90%;
+    }
+    #page{
+        width: 70%;
+    }
+    #colonne{
+        width: 25%;
+    }
+    
+/** FIN Media Queries 1000    */
+}
+
+@media screen and (max-width:700px){
+    .logo a{
+        font-size: 2.5rem;
+        padding: 1rem 0 1rem 0;
+    }
+    
+    #menu{
+        display: none;
+    }
+    #menu-mobile{
+        display: block;
+        text-align: center;
+    }
+    #menu-mobile i{
+        color: white;
+        font-size: 25px;
+    }
+    #menu-mobile ul{
+        padding-top: 0.5rem;
+    }
+    #menu-mobile li{
+        background-color: rgba(0, 0, 0, 0.95);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    }
+    #menu-mobile a{
+        padding: 0.5rem 0;
+        display: block;
+        color: white;
+        font-weight: bold;
+    }
+    
+    #entete{
+        line-height: 200%;
+        padding: 2rem 0;
+    }
+    .conteneur{
+        width: 95%;
+    }
+    .presentation, .inter {
+    padding: 3rem 1.5rem;
+    }
+    #menu a{
+        padding: 1.20rem 1rem;
+    }
+    #page,#pleine-page{
+        width: 100%;
+        text-align: center;
+    }
+    #contact #page, #contact #pleine-page{
+        order: 2;
+    }
+    #colonne{
+        margin-top: 2rem;
+        width: 100%;
+        text-align: center;
+    }
+    #contact #colonne{
+        order: 1;
+    }
+    #colonne li{
+        background-image: none;
+    }
+    .widget h3:after{
+        left: 47%;
+    }
+    #menu-pied{
+        padding: 1rem 0;
+        
+    }
+    footer li{
+        margin-right: 0;
+        margin-left: 10px;
+    }
+    
+/** FIN Media Queries 700   */
+}
+
+@media screen and (max-width:400px){
+    .conteneur{
+        width: 100%;
+    }
+    #menu a{
+        padding: 1.20rem 1rem 1.20rem 0;
+    }
+    
+    
+/** FIN Media Queries 400   */ 
+}

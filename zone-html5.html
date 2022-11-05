@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Réalisations d'un webmaster.." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zone HTML5 &lowast; Le blog des développeurs web</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/blog_style.css" />
+    <link rel="stylesheet" href="css/mobile-blog_style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700%7COpen+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <!--[if lt IE 9]>
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js">
+</script>
+<![endif]-->
+</head>
+
+<body id="top">
+    <!-- Début entete-->
+    <header class="fond">
+        <div class="conteneur">
+            <div id="entete">
+                <div class="logo"><a href="index.html">Dev Blog</a></div>
+                <p>Apprendre à coder pour de vrai</p>
+            </div>
+
+        </div>
+
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <nav id="menu-mobile">
+            <i class="fas fa-bars"></i>
+            <ul>
+                <li><a class="actif" href="index.html">Accueil</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Fin entete-->
+
+
+    <!-- Début conteneur principal-->
+    <main class="principal conteneur">
+        <!-- Liste des articles-->
+        <article id="pleine-page" class="inter">
+
+            <div class="fond-video">
+                <video muted="true" loop="true" autoplay="true">
+                    <source src="video/bg-video.mp4" type="video/ogg" />
+                </video>
+                <h1 class="titre-absolu">Zone HTML5/CSS3 - jQuery</h1>
+            </div>
+
+
+            <div class="tabs">
+                <ul>
+                    <li>
+                        <a href="#tabs-1">
+                            <i class="fab fa-html5"></i> Balises HTML5
+                        </a>
+                    </li>
+                    <li><a href="#tabs-2">
+                            <i class="fab fa-css3-alt"></i> Propriétés CSS3</a></li>
+                </ul>
+
+                <div id="tabs-1">
+                    <div class="accordion">
+                        <h3>figure</h3>
+                        <div>
+                            <figure class="centre">
+                                <img src="img/html5.png" alt="logo HTML5" />
+                                <figcaption>Logo HML5</figcaption>
+                            </figure>
+
+                        </div>
+                        <h3>audio</h3>
+                        <div>
+                            <audio controls>
+                                <source
+                                    src="http://download.blender.org/peach/bigbuckbunny_movies/big_buck_bunny_1080p_stereo.ogg"
+                                    type="audio/ogg" />
+
+                                Votre navigateur ne peut pas lire directement ce fichier, vous pouvez le <a
+                                    href="http://download.blender.org/peach/bigbuckbunny_movies/big_buck_bunny_1080p_stereo.ogg"
+                                    title="Télécharger Big Buck">telecharger</a>
+                            </audio>
+                        </div>
+                        <h3>video</h3>
+                        <div>
+                            <video width="320" height="180" muted="true" loop="true" controls="controls"
+                                poster="img/vignette.jpg">
+
+                                <source
+                                    src="http://download.blender.org/peach/bigbuckbunny_movies/big_buck_bunny_1080p_stereo.ogg"
+                                    type="video/ogg" />
+
+                                <source
+                                    src="http://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4"
+                                    type="video/mp4" />
+
+                                Vous pouvez télecharger la video <a
+                                    href="http://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4">BIGBUCK</a>
+                            </video>
+                        </div>
+
+                        <h3>iframe</h3>
+                        <div>
+
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/1beZMpZ725U?rel=0&amp;start=185" frameborder="0"
+                                gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
+                        </div>
+                        <h3>canvas</h3>
+                        <div>
+                            <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+                                Your browser does not support the HTML5 canvas tag.
+                            </canvas>
+
+                            <script>
+                                var c = document.getElementById("myCanvas");
+                                var ctx = c.getContext("2d");
+                                ctx.font = "30px Arial";
+                                ctx.strokeText("Hello World", 20, 50);
+
+                            </script>
+
+                        </div>
+                        <h3>meter</h3>
+                        <div>
+                            <p>
+                                <meter value="70" max="100"></meter>
+                            </p>
+
+
+                        </div>
+                        <h3>Progress</h3>
+                        <div>
+                            <p>
+                                <progress value="70" max="100">70%</progress>
+                            </p>
+                        </div>
+                        <h3>embed</h3>
+
+                        <div>
+                            <embed src="flash/demo-flash.swf" width="500" height="300" />
+                            <p><em>(Si flash installé sur navigateur)</em></p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div id="tabs-2">
+
+                    <div class="accordion">
+                        <h3>Border radius</h3>
+                        <div>
+
+                            <img class="tim border50" src="img/tim.jpg" alt="">
+                        </div>
+
+                        <h3>Text shadow</h3>
+                        <div>
+                            <p class="text-shadow">Ceci est un texte avec un effet d'ombrage (2 ombres)</p>
+                        </div>
+                        <h3>Box shadow</h3>
+                        <div>
+                            <a href="#" class="bouton">Démo Shadow</a>
+                        </div>
+
+                        <h3>Transitions</h3>
+                        <div>
+                            <div class="transition"></div>
+                        </div>
+                        <h3>Colonnes</h3>
+                        <div>
+
+                            <p class="colonne">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas earum,
+                                ipsa assumenda similique. Eos sapiente, aspernatur dolore consequuntur atque impedit
+                                officiis, eligendi suscipit molestias ipsa a ratione molestiae reprehenderit ut.Lorem
+                                ipsum dolor sit amet, consectetur adipisicing elit. Voluptas earum, ipsa assumenda
+                                similique. Eos sapiente, aspernatur dolore consequuntur atque impedit officiis, eligendi
+                                suscipit molestias ipsa a ratione molestiae reprehenderit ut.</p>
+                        </div>
+                        <h3>Dégradés</h3>
+                        <div>
+                            <div class="degrade">
+
+                            </div>
+                        </div>
+                        <h3>Transform</h3>
+                        <div>
+                            <h4>Rotate</h4>
+                            <div class="rotate">
+                                <p>Survoler pour faire tourner !</p>
+                            </div>
+
+                            <h4>Scale</h4>
+                            <div class="scale-content">
+                                <img src="img/1_s.jpg" alt="test scale">
+                            </div>
+
+                            <h4>Transform origin</h4>
+                            <div class="origin"></div>
+
+
+                        </div>
+                        <h3>Animation</h3>
+                        <div>
+                            <div class="anim">
+                                <img src="img/20.jpg" alt="test animation">
+                            </div>
+
+                        </div>
+                        <h3>Drop shadow</h3>
+                        <div>
+                            <img class="drop-shadow" src="img/HTML5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <!--            Fin tabs-->
+            </div>
+        </article>
+        <!-- Fin liste des articles -->
+
+
+    </main>
+    <!-- Fin conteneur principal-->
+
+    <!-- Début pied de page-->
+    <footer class="conteneur">
+        <div id="pied" class="flex">
+            <small>&copy; 2018 - Ibra D pour <a href="#">AP Formation</a></small>
+            <nav id="menu-pied">
+                <ul>
+                    <li><a href="#">Crédits</a></li>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">Plan</a></li>
+                </ul>
+            </nav>
+
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook-square fa-lg"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter-square fa-lg"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin fa-lg"></i></a></li>
+            </ul>
+
+        </div>
+    </footer>
+    <!-- Fin pied de page-->
+    <a title="haut de page" href="#top" class="top js-scrollTo">
+        <i class="fas fa-chevron-up fa-lg"></i>
+    </a>
+    <!-- DEBUT JAVASCRIPT-->
+    <!-- Bibliotheque jQuery -->
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <!-- Bibliotheque jQuery UI -->
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+    <!-- Script perso -->
+    <script type="text/javascript" src="js/blog_scripts.js"></script>
+
+    <!-- Selection jquery UI-->
+    <script type="text/javascript">
+        $(function () {
+            $(".accordion").accordion({
+                collapsible: true, // se ferme au clic sur l'onglet
+                active: false, // tous les onglets fermés par défaut
+                animate: {
+                    easing: "easeOutCubic",
+                    duration: 500
+                }, // animation à l'ouverture/fermeture
+                heightStyle: "content" // les div s'adaptent au contenu
+            });
+
+            $(".tabs").tabs();
+
+        });
+
+    </script>
+
+    <!-- Infobulles-->
+    <script type="text/javascript" src="js/tooltipster.bundle.min.js"></script>
+
+
+
+    <!-- FIN JAVASCRIPT-->
+</body>
+
+</html>

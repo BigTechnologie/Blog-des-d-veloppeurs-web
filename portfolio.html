@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Réalisations d'un webmaster.." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio &lowast; Le blog des développeurs web</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/blog_style.css" />
+    <link rel="stylesheet" href="css/mobile-blog_style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700%7COpen+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" type="text/css" href="css/carte-style.css" />
+    <link href='http://fonts.googleapis.com/css?family=Raleway:300,500|Arvo:700' rel='stylesheet' type='text/css'>
+
+    <!--[if lt IE 9]>
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js">
+</script>
+<![endif]-->
+</head>
+
+<body id="top">
+    <!-- Début entete-->
+    <header class="fond">
+        <div class="conteneur">
+            <div id="entete">
+                <div class="logo"><a href="index.html">Dev Blog</a></div>
+                <p>Apprendre à coder pour de vrai</p>
+            </div>
+
+        </div>
+
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a class="actif" href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <nav id="menu-mobile">
+            <i class="fas fa-bars"></i>
+            <ul>
+                <li><a class="actif" href="index.html">Accueil</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Fin entete-->
+    <!-- Début conteneur principal-->
+    <main class="principal conteneur">
+        <!-- Liste des articles-->
+        <article id="pleine-page" class="inter">
+
+            <h1>Portfolio</h1>
+            <p>Lorem ipsum dolor <a title="test infobulle" href="sit amet">sit amet</a>, consectetur adipisicing elit.
+            </p>
+
+            <h2>Galerie alsacréations</h2>
+
+
+
+            <!-- Début galerie alsacreations-->
+            <div class="alsa">
+
+
+                <ul>
+                    <li>
+                        <img src="img/10.jpg" alt="">
+                        <p>
+                            <strong>Info:</strong> Lorem ipsum dolor
+                        </p>
+                    </li>
+                    <li>
+                        <img src="img/20.jpg" alt="">
+                        <p>
+                            <strong>Info:</strong> Lorem ipsum dolor
+                        </p>
+                    </li>
+                    <li>
+                        <img src="img/30.jpg" alt="">
+                        <p>
+                            <strong>Info:</strong> Lorem ipsum dolor
+                        </p>
+                    </li>
+                    <li>
+                        <img src="img/40.jpg" alt="">
+                        <p>
+                            <strong>Info:</strong> Lorem ipsum dolor
+                        </p>
+                    </li>
+                    <li>
+                        <img src="img/50.jpg" alt="">
+                        <p>
+                            <strong>Info:</strong> Lorem ipsum dolor
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <!-- Début galerie fancybox-->
+
+            <h2>Galerie Fancybox</h2>
+            <h3>Images</h3>
+            <!--Fancybox-->
+            <ul class="fancy">
+                <li>
+                    <a data-fancybox="portfolio" href="img/1_b.jpg" title="Lorem ipsum dolor sit amet"> <img
+                            src="img/1_s.jpg" alt="" /> </a>
+                </li>
+                <li>
+                    <a data-fancybox="portfolio" href="img/2_b.jpg" title="Etiam quis mi eu elit temp"><img
+                            src="img/2_s.jpg" alt="" /></a>
+                </li>
+                <li>
+                    <a data-fancybox="portfolio" href="img/3_b.jpg" title="Cras neque mi, semper leon">
+
+                        <img src="img/3_s.jpg" alt="" />
+
+                    </a>
+                </li>
+                <li>
+                    <a data-fancybox="portfolio" href="img/4_b.jpg" title="Sed vel sapien vel sem uno"><img
+                            src="img/4_s.jpg" alt="" /></a>
+                </li>
+            </ul>
+
+            <h3>Médias</h3>
+            <ul>
+                <li> <a data-fancybox
+                        href="https://www.youtube.com/watch?v=_sI_Ps7JSEk&amp;autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0">
+                        YouTube video - sans boutons ni infos</a>
+                </li>
+                <li>
+                    <a data-fancybox data-type="iframe" data-src="http://codepen.io/fancyapps/full/jyEGGG/"
+                        href="javascript:;">Page Web</a>
+                </li>
+                <li><a data-fancybox data-type="iframe" data-src="https://mozilla.github.io/pdf.js/web/viewer.html"
+                        href="javascript:;">Fichier PDF</a>
+                </li>
+            </ul>
+
+            <h2>Carousel d'images</h2>
+
+            <div class="owl-carousel">
+
+                <a data-fancybox="galerie" class="item" href="img/1_b.jpg">
+                    <img src="img/1_s.jpg" alt="Image de démonstration">
+                </a>
+
+                <a data-fancybox="galerie" class="item" href="img/2_b.jpg">
+                    <img class="item" src="img/2_s.jpg" alt="Image de démonstration">
+                </a>
+                <a data-fancybox="galerie" class="item" href="img/3_b.jpg">
+                    <img class="item" src="img/3_s.jpg" alt="Image de démonstration">
+                </a>
+                <a data-fancybox="galerie" class="item" href="img/4_b.jpg">
+                    <img class="item" src="img/4_s.jpg" alt="Image de démonstration">
+                </a>
+                <a data-fancybox="galerie" class="item" href="img/5_b.jpg">
+                    <img class="item" src="img/5_s.jpg" alt="Image de démonstration">
+                </a>
+                <a data-fancybox="galerie" class="item" href="img/3_b.jpg">
+                    <img class="item" src="img/3_s.jpg" alt="Image de démonstration">
+                </a>
+            </div>
+
+
+            <h2>Programme</h2>
+
+            <!-- DEBUT MENU-->
+            <div class="carte-menu">
+
+                <div class="container">
+
+                    <section class="main">
+
+                        <div id="rm-container" class="rm-container">
+
+                            <div class="rm-wrapper">
+
+                                <div class="rm-cover">
+
+                                    <div class="rm-front">
+                                        <div class="rm-content">
+
+                                            <div class="rm-logo"></div>
+                                            <h2>Formation Webmaster</h2>
+                                            <h3>HTML5/CSS3 jQuery WordPress</h3>
+
+                                            <a href="#" class="rm-button-open">Programme</a>
+                                            <div class="rm-info">
+                                                <p>
+                                                    <strong>Ibra Diallo</strong><br> Concépteur & Développeur Web <br>
+                                                    AP
+                                                    Formation<br>
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                        <!-- /rm-content -->
+                                    </div>
+                                    <!-- /rm-front -->
+
+                                    <div class="rm-back">
+                                        <div class="rm-content">
+                                            <h4>HTML5</h4>
+                                            <dl>
+                                                <dt>Bella's Artichokes</dt>
+                                                <dd>Roasted artichokes with chipotle aioli and cream cheese</dd>
+
+                                                <dt>Bruschetta Blue Delight</dt>
+                                                <dd>Blue cheese and citrus bruschetta</dd>
+
+                                                <dt>Pomme Dulse</dt>
+                                                <dd>Baked potatoes with crisped dulse</dd>
+
+                                                <dt><a href="http://herbivoracious.com/2011/11/crostini-with-young-pecorino-grilled-figs-and-arugula-mint-pesto-recipe.html"
+                                                        class="rm-viewdetails" data-thumb="img/1.jpg">Green Love
+                                                        Crostini</a></dt>
+                                                <dd>Crostini with young pecorino, grilled figs and arugula &amp; mint
+                                                    pesto</dd>
+
+                                                <dt>Focaccia di Carciofi</dt>
+                                                <dd>Artichoke focaccia with fresh thyme</dd>
+                                            </dl>
+
+                                            <h4>Salads &amp; More</h4>
+                                            <dl>
+                                                <dt>Green Delight</dt>
+                                                <dd>Watercress, frisee and avocado salad</dd>
+
+                                                <dt><a href="http://herbivoracious.com/2010/02/thai-tofu-salad-recipe.html"
+                                                        class="rm-viewdetails" data-thumb="img/13.jpg">Gourmet Yam
+                                                        Taohu</a></dt>
+                                                <dd>Thai tofu salad yam taohu</dd>
+
+                                                <dt>Panini Deluxe</dt>
+                                                <dd>Buffalo mozzarella basil panini</dd>
+                                            </dl>
+                                        </div>
+                                        <!-- /rm-content -->
+                                        <div class="rm-overlay"></div>
+
+                                    </div>
+                                    <!-- /rm-back -->
+
+                                </div>
+                                <!-- /rm-cover -->
+
+                                <div class="rm-middle">
+                                    <div class="rm-inner">
+                                        <div class="rm-content">
+                                            <h4>CSS3</h4>
+                                            <dl>
+                                                <dt><a href="http://herbivoracious.com/2009/03/panfried-gnocchi-with-arugula-recipe.html"
+                                                        class="rm-viewdetails" data-thumb="img/11.jpg">Crispy Gnocchi
+                                                        with Arugula</a></dt>
+                                                <dd>Pan-fried potato gnocchi with arugula salad</dd>
+
+                                                <dt>Sea Palm Spicy Peanut Curry</dt>
+                                                <dd>Tender sea palm noodles, seasoned vegetables, spicy peanut curry and
+                                                    tempeh fenel croquettes</dd>
+
+                                                <dt><a href="http://herbivoracious.com/2012/09/caviar-lentil-salad-with-arugula-crispy-shallots-and-roasted-garlic-recipe.html"
+                                                        class="rm-viewdetails" data-thumb="img/8.jpg">Lentil Caviar
+                                                        &amp; Arugula</a></dt>
+                                                <dd>Black lentil curry with arugula salad, caramelized shallots and
+                                                    roasted garlic</dd>
+
+                                                <dt>Tamari-Maple Glazed Tofu</dt>
+                                                <dd>Wasabi emulsion, sesame seeds and scallions</dd>
+
+                                                <dt>Maple Barbeque Tofu</dt>
+                                                <dd>Grilled marinated tofu, maple barbeque sauce, tahini slaw, grilled
+                                                    seasonal vegetables and mashed potatoes</dd>
+
+                                                <dt><a href="http://herbivoracious.com/2012/07/king-oyster-mushroom-with-roasted-cherries-and-sage-no-that-isnt-meat-recipe-and-thought-process.html"
+                                                        class="rm-viewdetails" data-thumb="img/4.jpg">Luxur Oyster</a>
+                                                </dt>
+                                                <dd>King oyster mushroom with roasted cherries and sage</dd>
+
+                                                <dt><a href="http://herbivoracious.com/2012/09/rigatoni-with-roasted-cauliflower-and-spicy-tomato-sauce-recipe.html"
+                                                        class="rm-viewdetails" data-thumb="img/3.jpg">Rigatoni di
+                                                        Cavolfiore</a></dt>
+                                                <dd>Rigatoni with roasted cauliflower and spicy tomato sauce</dd>
+
+                                                <dt><a href="http://herbivoracious.com/2012/06/saffron-chickpea-stew-with-grilled-porcini-mushroom-recipe.html"
+                                                        class="rm-viewdetails" data-thumb="img/14.jpg">Saffron Chana
+                                                        Secret</a></dt>
+                                                <dd>Saffron chickpea stew with grilled porcini mushrooms</dd>
+                                            </dl>
+                                        </div>
+                                        <!-- /rm-content -->
+                                        <div class="rm-overlay"></div>
+                                    </div>
+                                    <!-- /rm-inner -->
+                                </div>
+                                <!-- /rm-middle -->
+
+                                <div class="rm-right">
+
+                                    <div class="rm-front">
+
+                                    </div>
+
+                                    <div class="rm-back">
+                                        <span class="rm-close">Close</span>
+                                        <div class="rm-content">
+                                            <h4>Desserts</h4>
+                                            <dl>
+                                                <dt><a href="http://herbivoracious.com/2012/08/crepes-with-roasted-french-plums-yogurt-and-honey.html"
+                                                        class="rm-viewdetails" data-thumb="img/5.jpg">French Plum
+                                                        Crepes</a></dt>
+                                                <dd>Crepes with roasted french plums, yogurt &amp; honey</dd>
+
+                                                <dt><a href="http://herbivoracious.com/2012/05/butterscotch-pudding-with-bittersweet-ganache-and-caramelize-white-chocolate-crunchies-recipe.html"
+                                                        class="rm-viewdetails" data-thumb="img/6.jpg">Butterscotch
+                                                        Pudding</a></dt>
+                                                <dd>Butterscotch pudding with bittersweet ganache and caramelize white
+                                                    chocolate crispies</dd>
+
+                                                <dt><a href="http://herbivoracious.com/2009/12/gateaux-de-crepes-recipe.html"
+                                                        class="rm-viewdetails" data-thumb="img/12.jpg">Chocolate Gâteau
+                                                        de Crêpes</a></dt>
+                                                <dd>Gâteau de crêpes with chocolate pastry cream and dulce de leche</dd>
+
+                                                <dt><a href="http://herbivoracious.com/2009/05/dutch-baby-with-sauteed-apples-giant-ovenbaked-pancakes-recipe.html"
+                                                        class="rm-viewdetails" data-thumb="img/10.jpg">Dutch Baby With
+                                                        Sauteed Apples</a></dt>
+                                                <dd>Dutch ginat oven-baked pancakes with sauteed apples</dd>
+
+                                                <dt><a href="http://herbivoracious.com/2008/08/blueberry-napol.html"
+                                                        class="rm-viewdetails" data-thumb="img/7.jpg">Blueberry
+                                                        Napoleon</a></dt>
+                                                <dd>Blueberry Napoleon with crème fraîche and raspberry powder</dd>
+
+                                                <dt><a href="http://herbivoracious.com/2008/09/rings-of-saturn.html"
+                                                        class="rm-viewdetails" data-thumb="img/2.jpg">Rings of
+                                                        Saturn</a></dt>
+                                                <dd>Saturn peach on challah french toast</dd>
+
+                                                <dt><a href="http://herbivoracious.com/2008/04/recipe-atayef.html"
+                                                        class="rm-viewdetails" data-thumb="img/9.jpg">Classic Atayef</a>
+                                                </dt>
+                                                <dd>Syrian ricotta-filled dessert pancakes</dd>
+                                            </dl>
+                                            <div class="rm-order">
+                                                <p><strong>Would you like us to cater your event?</strong> Call us &amp;
+                                                    we'll help you find a venue and organize the event:
+                                                    <strong>626.511.1170</strong>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- /rm-content -->
+                                    </div>
+                                    <!-- /rm-back -->
+
+                                </div>
+                                <!-- /rm-right -->
+                            </div>
+                            <!-- /rm-wrapper -->
+
+                        </div>
+                        <!-- /rm-container -->
+                    </section>
+
+                </div>
+
+
+            </div>
+            <!--FIN MENU-->
+
+
+
+
+
+        </article>
+
+
+
+    </main>
+    <!-- Fin conteneur principal-->
+
+    <!-- Début pied de page-->
+    <footer class="conteneur">
+        <div id="pied" class="flex">
+            <small>&copy; 2018 - Ibra D pour <a href="#">AP Formation</a></small>
+            <nav id="menu-pied">
+                <ul>
+                    <li><a href="#">Crédits</a></li>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">Plan</a></li>
+                </ul>
+            </nav>
+
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook-square fa-lg"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter-square fa-lg"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin fa-lg"></i></a></li>
+            </ul>
+
+        </div>
+    </footer>
+    <!-- Fin pied de page-->
+    <a title="haut de page" href="#top" class="top js-scrollTo">
+        <i class="fa-lg fas fa-chevron-up"></i>
+    </a>
+
+    <!-- DEBUT JAVASCRIPT-->
+    <!-- Bibliotheque jQuery -->
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <!-- Fancybox -->
+    <script src="
+https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js
+"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Options fancybox -->
+    <script type="text/javascript">
+        $(function () {
+            $('[data-fancybox]').fancybox({
+                loop: true
+            });
+
+            $('.owl-carousel').owlCarousel({
+                slideBy: 1, // defilement 1 par 1
+                autoplay: true, // defilement automatique
+                autoplayTimeout: 5000, // au bout de 10s
+                autoplayHoverPause: true, // stoppe défilement au survol
+                loop: true, // boucle
+                navText: ["<i class='fas fa-angle-left'></i>", "<i class='fas fa-angle-right'></i>"], // apparence des fleches
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false,
+                        margin: 0,
+                        dots: true
+                    },
+                    500: {
+                        items: 3,
+                        margin: 10,
+                        nav: false,
+                        dots: true
+                    },
+                    900: {
+                        items: 4,
+                        dots: false,
+                        nav: true,
+                        margin: 20
+                    }
+                }
+            });
+
+        });
+
+    </script>
+    <!-- Script perso -->
+    <script type="text/javascript" src="js/blog_scripts.js"></script>
+
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            Menu.init();
+
+        });
+
+    </script>
+    <!-- Infobulles-->
+    <script type="text/javascript" src="js/tooltipster.bundle.min.js"></script>
+
+
+    <!-- FIN JAVASCRIPT-->
+
+</body>
+
+</html>
